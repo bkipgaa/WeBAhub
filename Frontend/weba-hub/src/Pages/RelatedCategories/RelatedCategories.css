@@ -1,0 +1,215 @@
+/* ================== SERVICES PAGE ================== */
+.services-page {
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================== SERVICES GRID ================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.loading-state, .error-state, .no-services, .no-technicians {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.category-badge {
+  background: #e9ecef;
+  color: #495057;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px 0;
+}
+
+.rating .fa-star {
+  color: #ffc107;
+}
+
+.related-count {
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.retry-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.service-card h4 {
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ================== TECHNICIANS SECTION ================== */
+.technicians-section {
+  margin-top: 2rem;
+}
+
+/* Back Button */
+.back-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.technicians-section h2 {
+  margin-bottom: 0.3rem;
+}
+
+.technicians-count {
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+/* ================== TECHNICIANS GRID ================== */
+.technicians-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.technician-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.technician-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.technician-card.related {
+  border: 2px solid #007bff20;
+}
+
+.technician-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.technician-info h4 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.technician-info p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+/* Profile Button */
+.profile-btn {
+  margin-top: 0.8rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.profile-btn:hover {
+  background: #0056b3;
+}
+
+/* ================== NO TECHNICIANS ================== */
+.no-technicians {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+}
+
+.no-technicians i {
+  font-size: 2.5rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* ================== RELATED SERVICES ================== */
+.related-services {
+  margin-top: 2rem;
+}
+
+.related-services h3 {
+  margin-bottom: 1rem;
+  color: #007bff;
+}

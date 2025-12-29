@@ -1,0 +1,60 @@
+form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #4a90e2;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3a78c0;
+}
+
+/* Not yet registered / Signup link styling */
+.signup-link {
+    color: #4a90e2;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Pages */
+.page {
+    padding: 20px;
+    text-align: center;
+}
+
+.page h2 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
